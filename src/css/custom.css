@@ -8,7 +8,7 @@
 :root {
   --ifm-background-color: rgb(252, 251, 251);
   --ifm-color-primary: #db00fd;
-  --ifm-color-primary: rgba(0, 57, 209);
+  --ifm-color-primary: #0039d1;
   --ifm-color-primary-dark: #1490f3;
   --ifm-color-primary-darker: #0b8df5;
   --ifm-color-primary-darkest: #1567c0;
@@ -40,11 +40,14 @@
 .navbar {
   background-color: rgba(0, 57, 209);
   color: rgb(255, 255, 255);
+  height: 3rem;
 }
 .items label {
   color: #fff
 }
-
+.footer {
+  background-color: rgba(0, 57, 209);
+}
 button {
   background-color: blue;
   border-radius: 20px;
@@ -60,4 +63,22 @@ button {
 [data-theme='dark'] .navbar {
   background-color: rgba(0, 57, 209);
   color: rgb(255, 255, 255);
+}
+.doc_title {
+  color: white
+}
+.doc_subtitle {
+  color: white
+}
+[data-theme='dark'] .doc_title {
+  color: white
+}
+[data-theme='dark'] .doc_subtitle {
+  color: white
+}
+.doc_title, .doc_subtitle {
+  text-align: left
+}
+.home_button {
+  justify-content: left;
 }

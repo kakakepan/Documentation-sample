@@ -19,8 +19,12 @@
 .buttons {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
 }
 [data-theme='dark'] .hero_title {
   color: rgb(255, 255, 255);
+}
+.img_home {
+  justify-content: right;
+  width: 50%;
 }

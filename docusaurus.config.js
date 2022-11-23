@@ -35,6 +35,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          includeCurrentVersion: false,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -59,17 +60,28 @@ const config = {
     ({
       navbar: {
         title: '',
+        hideOnScroll: true,
         logo: {
           alt: 'My Site Logo',
           src: 'https://img1.wsimg.com/isteam/ip/6f380b15-78c1-4a0d-9bc4-3e2fa49378cf/logo.jpg',
         },
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
+            type: 'dropdown',
             position: 'left',
             label: 'Docs',
-            to: '/',
+            items: [
+              {
+                type: 'doc',
+                label: 'What is Babylon?',
+                docId: 'intro'
+              },
+              {
+                type: 'doc',
+                label: 'Building a Chain using Babylon',
+                docId: 'chainbuilding'
+              },
+            ]
           },
           //{to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -77,9 +89,30 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
+          {
+            type: 'docsVersionDropdown',
+            position: 'left',
+            dropdownActiveClassDisabled: true,
+          },
+          {
+            href: 'https://babylonchain.io/about',
+            label: 'About',
+            position: 'right',
+          },
+          {
+            href: 'https://babylonchain.io/contact',
+            label: 'Contact',
+            position: 'right',
+          },
         ],
       },
       footer: {
+        logo: {
+          alt: 'Meta Open Source Logo',
+          src: 'https://img1.wsimg.com/isteam/ip/6f380b15-78c1-4a0d-9bc4-3e2fa49378cf/logo.jpg',
+          width: 160,
+          height: 25,
+        },
         style: 'dark',
         links: [
           {
@@ -118,7 +151,7 @@ const config = {
             ],
           },
         ],
-        //copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
