@@ -11,7 +11,8 @@ function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
+      <div className='hero_container'>
+      <div className="title_container">
         <h1 className="doc_title">{siteConfig.title}</h1>
         <p className="doc_subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
@@ -21,6 +22,8 @@ function HomepageHeader() {
             Babylon User Guide
           </Link>
         </div>
+      </div>
+      <img className='image' src='https://img1.wsimg.com/isteam/ip/6f380b15-78c1-4a0d-9bc4-3e2fa49378cf/homepage_picture-1057d3c.jpg/:/'></img>
       </div>
     </header>
   );
