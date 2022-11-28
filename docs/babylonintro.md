@@ -16,7 +16,7 @@ custom_edit_url: null
 ## Proof of Stake Security Issues
 Although **PoS** is more appealing than **PoW**, it is more open to attacks due to the lack of work supporting its security.
 ### Stake Re-Use Attack
-This attack harms the majority of the **PoS** chains. **Stake re-use** is when the attacker removes its stakes from the original chain to re-use them in the faux chain.
+This attack harms the majority of the **PoS** chains. **Stake re-use** is when the attacker removes its stakes from the original chain to re-use them in the attack chain.
 
 The solution to this attack is **Social Consensus**, in which users must agree on the correct chain before unstaking is permitted. However, on the Cosmos chain, validators who wish to unstake tokens must wait approximately 21 days, which is extremely slow and inconsistent with the PoS's fast and efficient nature. An **external blockchain component** is another countermeasure to this attack. Bitcoin, for instance, can validate timestamps in a couple of hours, but its limited throughput prevents this from occurring.
 ## Babylon
