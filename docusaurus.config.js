@@ -81,6 +81,11 @@ const config = {
                 label: 'Building a Chain using Babylon',
                 docId: 'chainbuilding'
               },
+              {
+                type: 'doc',
+                label: 'Babylon Introduction',
+                docId: 'babylonintro'
+              },
             ]
           },
           //{to: '/blog', label: 'Blog', position: 'left'},
